@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.toggleModal {
+  -webkit-transform: translate(0) !important;
+          transform: translate(0) !important;
+}
+
+main {
+  padding: 1rem;
+}
+
+main nav {
+  position: relative;
+}
+
+main nav .logo img {
+  width: 150px;
+}
+
+main nav .search-wrapper {
+  padding-top: 2rem;
+}
+
+main nav .search-wrapper .container {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr .7fr .2fr;
+      grid-template-columns: 1fr .7fr .2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main nav .search-wrapper .container .byCity, main nav .search-wrapper .container .byGuest, main nav .search-wrapper .container .search-icon {
+  padding: 1.3rem;
+  font-size: .8rem;
+  font-family: 'Mulish';
+  cursor: pointer;
+}
+
+main nav .search-wrapper .container .byGuest {
+  color: #BDBDBD;
+}
+
+main nav .search-wrapper .container .byCity, main nav .search-wrapper .container .byGuest {
+  border-right: 1px solid #e6e6e6;
+}
+
+main nav .search-wrapper .container .search-icon {
+  text-align: center;
+}
+
+main nav .search-wrapper .container .search-icon .icon {
+  color: #EB5757;
+  font-size: 1.2rem;
+}
+
+main nav .modal {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+main nav .modal .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main nav .modal .nav .icon {
+  cursor: pointer;
+}
+
+main nav .modal .content .wrapper {
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+}
+
+main nav .modal .content .wrapper .byCity, main nav .modal .content .wrapper .byGuest, main nav .modal .content .wrapper .search-icon {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+main nav .modal .content .wrapper .byCity, main nav .modal .content .wrapper .byGuest {
+  border-bottom: 1px solid #eaeaea;
+}
+
+main nav .modal .content .wrapper .search-icon {
+  display: none;
+}
+
+main nav .modal .content .items .item-1 ul li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+main nav .modal .content .items .item-2 {
+  padding: 1rem;
+}
+
+main nav .modal .content .items .item-2 .single {
+  padding: 10px 0;
+}
+
+main nav .modal .content .items .item-2 .single .title {
+  line-height: 2;
+}
+
+main nav .modal .content .items .item-2 .single .btn-flex {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+main nav .modal .content .items .item-2 .single .btn-flex span:not(:nth-child(2)) {
+  display: inline-block;
+  border: 1px solid #333333;
+  padding: 5px 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main nav .modal .content .items .item-2 .single .btn-flex span:nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .stays-wrapper {
+  padding-top: 2rem;
+}
+
+main .stays-wrapper .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .stays-wrapper .hero .left {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+main .stays-wrapper .hero .right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 400;
+}
+
+main .stays-wrapper .content .single {
+  padding: .8rem 0;
+}
+
+main .stays-wrapper .content .single .photo {
+  padding-top: 1rem;
+}
+
+main .stays-wrapper .content .single .photo img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+main .stays-wrapper .content .single ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+main .stays-wrapper .content .single ul li {
+  font-size: 14px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .stays-wrapper .content .single ul li:nth-child(1) {
+  text-transform: uppercase;
+  border: 1px solid gray;
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 10px;
+  font-weight: bold;
+}
+
+main .stays-wrapper .content .single ul li:nth-child(2) {
+  color: #828282;
+}
+
+main .stays-wrapper .content .single ul li:nth-child(3) span {
+  color: #EB5757;
+}
+
+main .stays-wrapper .content .single .title {
+  font-weight: 600;
+  color: #333333;
+}
+
+main footer {
+  padding: 1rem 0;
+  text-align: center;
+  color: #333333;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main nav article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main nav article .search-wrapper .container {
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr .2fr;
+        grid-template-columns: 1fr 1fr .2fr;
+  }
+  main nav article .search-wrapper .container .byCity, main nav article .search-wrapper .container .byGuest, main nav article .search-wrapper .container .search-icon {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  main nav article .search-wrapper .container .search-icon .icon {
+    font-size: 1.4rem;
+  }
+  main nav .search-wrapper {
+    padding-top: 0;
+  }
+  main nav .search-wrapper .container .byCity, main nav .search-wrapper .container .byGuest, main nav .search-wrapper .container .search-icon {
+    font-size: 1rem;
+  }
+  main .stays-wrapper .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  main .stays-wrapper .content .single ul li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .stays-wrapper {
+    padding-top: 4rem;
+  }
+  main .stays-wrapper .content {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  main .stays-wrapper .content .single ul li {
+    font-size: 12px;
+  }
+}
